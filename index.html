@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Abdulaziz - Web designer</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="../bootstrap/css/bootstrap.css">
+    <link rel="stylesheet" href="../font-awesome/css/font-awesome.min.css">
+    <link rel="icon" href="photos/icon-pic.jpg">
+    <link rel="stylesheet" href="fonts.css">
+</head>
+<body class="bg-dark">
+    <div class="togg" onclick="spec()">
+        <div class="first"></div>
+        <div class="second"></div>
+        <div class="last"></div>
+    </div>
+    <div class="left-page">
+        <nav>
+            <ul>
+                <a href="index.html">
+                    <li>
+                        <i class="fa fa-home active"></i>
+                        <h1 class="active active-nav-h1">Home</h1>
+                    </li>
+                </a>
+                <a href="about/index.html">
+                    <li>
+                        <i class="fa fa-user"></i>
+                        <h1>About me</h1>
+                    </li>
+                </a>
+                <a href="resume/index.html">
+                    <li>
+                        <i class="fa fa-graduation-cap"></i>
+                        <h1>Resume</h1>
+                    </li>
+                </a>
+                <a href="port/index.html">
+                    <li>
+                        <i class="fa fa-briefcase"></i>
+                        <h1>Portfolio</h1>
+                    </li>
+                </a>
+                <a href="contact/index.html">
+                    <li>
+                        <i class="fa fa-envelope"></i>
+                        <h1>Contact</h1>
+                    </li>
+                </a>
+            </ul>
+        </nav>
+        <div class="my-spec">
+            <div class="img"></div>
+            <h1>Abdul-aziz</h1>
+            <h4>Web Designer</h4>
+            <nav>
+                <ul>
+                    <a href="index.html">
+                        <li>
+                            <h1 class="active active-nav-h1">Home</h1>
+                        </li>
+                    </a>
+                    <a href="about/index.html">
+                        <li>
+                            <h1>About me</h1>
+                        </li>
+                    </a>
+                    <a href="resume/index.html">
+                        <li>
+                            <h1>Resume</h1>
+                        </li>
+                    </a>
+                    <a href="port/index.html">
+                        <li>
+                            <h1>Portfolio</h1>
+                        </li>
+                    </a>
+                    <a href="contact/index.html">
+                        <li>
+                            <h1>Contact</h1>
+                        </li>
+                    </a>
+                </ul>
+            </nav>
+            <div class="media-icons">
+                <a href="https://www.instagram.com/this_is_abdulaziz/"  target="_blank">
+                    <i class="fa fa-instagram"></i>
+                </a>
+                <a href="https://www.facebook.com/abdulaziz.aziz.3726/"  target="_blank">
+                    <i class="fa fa-facebook"></i>
+                </a>
+                <a href="https://twitter.com/abdulaz52882106"  target="_blank">
+                    <i class="fa fa-twitter"></i>
+                </a>
+            </div>
+            <button type="button">Download CV</button>
+            <footer>
+                <h6>&copy; 2021  All rights reserved.</h6>
+            </footer>
+        </div>
+    </div>
+    <div class="right-page">
+        <div class="page-text">
+            <h1>Abdul-aziz</h1>
+            <h2 class="text-one">Web Designer</h2>
+            <h2 class="text-two">Frontend-Devoloper</h2>
+        </div>
+    </div>
+
+
+        <script>
+            var x = 0
+            function spec(){
+                const mySpec = document.querySelector(".my-spec")
+                const second = document.querySelector(".first")
+                const first = document.querySelector(".second")
+                const last = document.querySelector(".last")
+                const togg = document.querySelector(".togg")
+                if (x == 0) {
+                    mySpec.style.transform = "translateX(0)"
+                    first.style.transform = "rotate(45deg)"
+                    first.style.margin = "10px 0 0 0"
+                    second.style.display = "none"
+                    last.style.transform = "rotate(-45deg)"
+                    last.style.margin = "-5px 0 0 0"
+                    togg.style.padding = "12px 0 0 10px"
+                    togg.style.opacity = "100%"
+                    x = 1
+                }else if (x == 1) {
+                    mySpec.style.transform = "translateX(-100%)"
+                    first.style.transform = "rotate(0deg)"
+                    first.style.margin = "4px 0"
+                    second.style.display = "block"
+                    last.style.transform = "rotate(0deg)"
+                    last.style.margin = "4px 0"
+                    togg.style.padding = "9px 0 0 9px"
+                    togg.style.opacity = "40%"
+                    x = 0
+                }
+            }
+        </script>
+    <script src="../bootstrap/js/bootstrap.js"></script>
+    <script src="../bootstrap/js/jquery.js"></script>
+</body>
+</html>

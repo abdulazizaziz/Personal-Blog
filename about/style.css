@@ -1,0 +1,539 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+body::-webkit-scrollbar{
+    width: 5px;
+}
+body::-webkit-scrollbar-track{
+    background-color: #222222;
+}
+body::-webkit-scrollbar-thumb{
+    border-radius: 20px;
+    width: 5px;
+    background-color: lightgray;
+}
+.left-page .my-spec::-webkit-scrollbar{
+    width: 3px;
+}
+.left-page .my-spec::-webkit-scrollbar-track{
+    background-color: #444444;
+}
+.left-page .my-spec::-webkit-scrollbar-thumb{
+    border-radius: 20px;
+    width: 3px;
+    background-color: lightgray;
+}
+.togg{
+    position: fixed;
+    opacity: 40%;
+    left: 10px;
+    top: 10px;
+    background-color: #04B4E0;
+    width: 50px;
+    height: 50px;
+    border-radius: 100%;
+    cursor: pointer;
+    padding: 9px 0 0 9px;
+    display: none;
+}
+.togg div{
+    width: 30px;
+    height: 5px;
+    margin: auto;
+    border-radius: 10px;
+    background-color: white;
+    margin: 4px 0;
+    transition-duration: .2s;
+}
+.active{
+    color: #04B4E0!important;
+    opacity: 100%!important;
+    transform: translateY(0)!important;
+}
+span{
+    color: #04B4E0!important;
+
+}
+
+.left-page{
+    width: 520px;
+    height: 100vh;
+    position: fixed;
+}
+.left-page > nav{
+    width: 15%;
+    height: 100%;
+    float: left;
+    text-align: center;
+    background-color: #222222;
+}
+.left-page > nav li{
+    list-style-type: none;
+    border-bottom: 1px solid #444444;
+    margin: 20px 0;
+}
+.left-page > nav li i{
+    color: white;
+    font-size: 30px;
+    transition-duration: .6s;
+}
+.left-page > nav li:hover > i{
+    color: #04B4E0;
+}
+a:hover{
+    text-decoration: none!important;
+}
+.left-page > nav li h1{
+    font-size: 14px;
+    color: white;
+}
+.left-page > nav li h1{
+    opacity: 50%;
+    transition-duration: .5s;
+    transform: translateY(-5px);
+}
+.left-page > nav li:hover h1{
+    opacity: 100%;
+    transform: translateY(0);
+}
+.left-page .my-spec{
+    width: 85%;
+    height: 100%;
+    float: left;
+    background-color: #444444;
+    text-align: center;
+    transition-duration: .5s;
+}
+.left-page .my-spec .img{
+    width: 180px;
+    height: 180px;
+    border-radius: 100%;
+    border: 4px solid whitesmoke;
+    margin: auto;
+    margin-top: 20%;
+    background: url("../photos/aziz1.JPG");
+    background-size: 200% 200%;
+    background-position: -90px -20px;
+    animation: photo 10s infinite;
+}
+
+.left-page .my-spec h1{
+    margin-top: 20px;
+    color: whitesmoke;
+}
+.left-page .my-spec h4{
+    color: gray;
+    font-weight: 400;
+}
+.left-page .my-spec > nav{
+    display: none;
+}
+.left-page .my-spec > nav ul a li h1{
+    color: #EEEEEE;
+    font-size: 16px;
+}
+.left-page .my-spec .media-icons{
+    margin-top: 20px;
+}
+.left-page .my-spec .media-icons i{
+    font-size: 25px;
+    margin: 0 6px;
+    color: white;
+    width: 40px;
+    height: 40px;
+    border-radius: 100%;
+    padding-top: 7px;
+    transition-duration: .6s;
+}
+.left-page .my-spec .media-icons i:hover{
+    background-color: rgba(255,255,255,0.5);
+}
+.left-page .my-spec button{
+    margin-top: 20px;
+    border-radius: 30px;
+    padding: 10px 20px;
+    border: 2px solid white;
+    background-color: transparent;
+    color: white;
+    font-weight: 500;
+    letter-spacing: .5px;
+    transition-duration: .7s;
+}
+.left-page .my-spec button:hover{
+    background-color: white;
+    color: #007BFF;
+}
+.left-page .my-spec footer{
+    position: absolute;
+    bottom: 0%;
+    margin: auto;
+    left: 43%;
+}
+.left-page .my-spec footer h6{
+    font-size: 12px;
+    color: whitesmoke;
+}
+
+.right-page{
+    float: right;
+    width: 61.9%;
+    min-height: 300vh;
+    position: relative;
+    /* animation: home .5s 1; */
+    background-color: #222222;
+    background-size: cover;
+    background-image: linear-gradient(rgba(34,34,34,0.8),rgba(34,34,34,0.8)),url(photos/aziz1.JPG);
+}
+@keyframes home{
+    0%{
+        top: -300vh;
+    }
+    100%{
+        top: 0;
+    }
+}
+.right-page .text-page{
+    width: 85%;
+    margin: auto;
+    padding-top: 7%;
+}
+
+
+.right-page .text-page .about{
+    width: 55%;
+    float: left;
+}
+.right-page .text-page .about h1{
+    font-weight: 600;
+    font-size: 30px;
+    margin-bottom: 50px;
+}
+.right-page .text-page .about p{
+    color: white;
+}
+.right-page .text-page .spec{
+    width: 40%;
+    float: left;
+    margin-left: 5%;
+    margin-top: 80px;
+
+}
+.right-page .text-page .spec h1{
+    font-size: 15px;
+    color: white;
+    padding: 4px 0;
+}
+.right-page .text-page .spec h1 span{
+    margin-right: 10px;
+    font-weight: 600;
+}
+.right-page .text-page .what-do{
+    position: relative;
+    top: 50px;
+}
+.right-page .text-page .what-do .what{
+    font-weight: 600;
+    font-size: 25px;
+    margin-bottom: 50px;
+    color: white;
+}
+.right-page .text-page .what-do .web-design,.right-page .text-page .what-do .copy-right{
+    width: 48%;
+    margin-right: 4%;
+    float: left;
+}
+.right-page .text-page .what-do i{
+    color: #04B4E0;
+    font-size: 42px;
+    margin-top: 30px;
+}
+.right-page .text-page .what-do h1{
+    margin-bottom: 10px;
+    font-size: 18px;
+    margin-top: 10px;
+    color: white;
+    font-weight: 600;
+
+}
+.right-page .text-page .what-do p{
+    color: white;
+    font-size: 15px;
+}
+/* .right-page .text-page .what-do div{
+    border: 1px solid tomato;
+} */
+.right-page .text-page .what-do div:hover{
+    transition-duration: 1s;
+}
+.right-page .text-page .what-do .ecommerce,.right-page .text-page .what-do .management{
+    width: 48%;
+    float: left;
+}
+.right-page .text-page .testimonials{
+    position: relative;
+    top: 100px;
+    color: white;
+    width: 100%;
+}
+.right-page .text-page .testimonials h1{
+    font-weight: 600;
+    font-size: 25px;
+    margin-bottom: 50px;
+    color: white;
+    color: #EEEEEE;
+}
+.right-page .text-page .testimonials .row-tes div{
+    width: 48%;
+    padding: 2%;
+    border-radius: 20px;
+    border: 2px solid gray;
+    float: left;
+    height: 260px;
+}
+.right-page .text-page .testimonials .row-tes .left{
+    margin-right: 4%;
+}
+.right-page .text-page .testimonials .row-tes div img{
+    width: 72px;
+    height: 72px;
+    border-radius: 100%;
+    position: relative;
+    top: -60px;
+    left: 40px;
+}
+.right-page .text-page .testimonials .row-tes div p{
+    position: relative;
+    top: -40px;
+    color: #A5A6A7;
+}
+.right-page .text-page .testimonials .row-tes div footer p{
+    color: white;
+    font-size: 25px;
+    float: left;
+}
+.right-page .text-page .testimonials .row-tes div footer h1{
+    float: right;
+    font-size: 50px;
+    position: relative;
+    top: -50px;
+    color: #04B4E0;
+}
+.right-page .text-page .clients{
+    width: 100%;
+    position: relative;
+    margin-top: 500px;
+    min-height: 300px;
+    padding: 0;
+}
+.right-page .text-page .clients h1{
+    font-weight: 600;
+    font-size: 25px;
+    margin-bottom: 50px;
+    color: white;
+    color: #EEEEEE;
+}
+.right-page .text-page .clients .img{
+    float: left;
+    margin-right: 30px;
+}
+.right-page .text-page .clients .img img{
+    height: 100px;
+}
+.right-page .text-page .pricing h1{
+    font-weight: 600;
+    font-size: 25px;
+    margin-bottom: 50px;
+    color: white;
+    color: #EEEEEE;
+}
+.right-page .text-page .pricing .lite{
+    width: 47%;
+    text-align: center;
+    background-color: #333333;
+    border-radius: 20px;
+    border: 2px solid #444444;
+    padding: 40px;
+    float: left;
+    position: relative;
+    transition-duration: .6s;
+}
+.right-page .text-page .pricing .lite:hover{
+    transform: translateY(-10px);
+}
+.mr{
+    margin-right: 6%;
+}
+.u-b{
+    text-decoration: black;
+}
+.right-page .text-page .pricing .lite h1{
+    font-size: 15px;
+}
+.right-page .text-page .pricing .lite h3{
+    font-size: 42px;
+    color: white;
+    margin-top: 20px;
+}
+.right-page .text-page .pricing .lite p{
+    color: #AAAAAA;
+    margin-top: -15px;
+    font-size: 12px;
+}
+.right-page .text-page .pricing .lite button{
+    margin-top: 20px;
+    border-radius: 30px;
+    padding: 10px 20px;
+    border: 2px solid white;
+    background-color: transparent;
+    color: white;
+    font-weight: 500;
+    letter-spacing: .5px;
+    transition-duration: .7s;
+    margin-bottom: 30px;
+}
+.right-page .text-page .pricing .lite button:hover{
+    background-color: white;
+    color: #222222;
+}
+.right-page .text-page .pricing .lite h2{
+    color: #D5D5D5;
+    font-size: 14px;
+    padding: 5px 0;
+}
+.right-page .text-page .fun{
+    margin-bottom: 300px;
+}
+.right-page .text-page .fun .fun-items{
+    width: 31%;
+    text-align: center;
+    background-color: #333333;
+    border-radius: 10px;
+    border: 2px solid #444444;
+    padding: 30px 40px 10px 40px;
+    float: left;
+    position: relative;
+    transition-duration: .6s;
+}
+.fun-mr{
+    margin-right: 2%;
+}
+.right-page .text-page .fun .fun-items:hover{
+    transform: translateY(-10px);
+}
+
+.right-page .text-page .fun h1{
+    font-weight: 600;
+    font-size: 25px;
+    margin-bottom: 50px;
+    color: white;
+    color: #EEEEEE;
+}
+.right-page .text-page .fun .fun-items h1{
+    font-size: 15px;
+    margin-bottom: 20px;
+    margin-top: 20px;
+}
+.right-page .text-page .fun .fun-items h3{
+    font-size: 42px;
+    color: white;
+    /* margin-bottom: 20px; */
+    animation: fun-item-h3 1s 1;
+}
+@keyframes fun-item-h3{
+    0%{
+        opacity: 0;
+    }
+    100%{
+        opacity: 100%;
+    }
+}
+.right-page .text-page .fun .fun-items i{
+    color: #04B4E0;
+    font-size: 33px;
+    transition-duration: 2s;
+}
+.right-page .text-page .fun .fun-items:hover i{
+    color: #007BFF;
+}
+@media screen and (max-width: 1024px){
+    .left-page > nav{
+        display: none;
+    }
+    .left-page .my-spec{
+        transform: translateX(-100%);
+        z-index: 1000;
+        overflow-y: scroll;
+    }
+    .left-page .my-spec > nav{
+        display: block;
+    }
+    .right-page{
+        width: 100%;
+        z-index: -1;
+    }
+    .togg{
+        display: block;
+        z-index: 10000;
+    }
+    .left-page .my-spec footer{
+        position: static;
+        margin-top: 50px;
+    }
+
+}
+@media screen and (max-width: 425px){
+    .left-page{
+        width: 100%;
+    }
+    .left-page .my-spec{
+        width: 100%;
+    }
+    .right-page .text-page .about{
+        width: 100%;
+        margin-top: 50px;
+    }
+    .right-page .text-page .spec{
+        width: 100%;
+    }
+    .right-page .text-page .what-do .web-design,.right-page .text-page .what-do .ecommerce,.right-page .text-page .what-do .copy-right,.right-page .text-page .what-do .management{
+        width: 100%;
+    }
+    .right-page .text-page .testimonials .row-tes div{
+        width: 100%;
+    }
+    .right-page .text-page .testimonials .row-tes .last{
+        margin: 80px 0;
+    }
+    .right-page .text-page .clients{
+        width: 100%;
+        margin-top: 260%;
+        margin-bottom: 90%;
+    }
+    .right-page .text-page .clients div{
+        width: 100%;
+        margin: 10px 0;
+    }
+    .right-page .text-page .pricing{
+        margin-bottom: 1300px;
+    }
+    .right-page .text-page .pricing .lite{
+        width: 100%;
+        margin: 20px 0;
+    }
+    .right-page .text-page .fun .fun-items{
+        width: 60%;
+        margin: 10px 20%;
+    }
+}
+@media screen and (max-width: 320px){
+    .right-page .text-page .clients{
+        margin-top: 280%;
+    }
+    .right-page .text-page .fun .fun-items{
+        width: 70%;
+        margin: 10px 20%;
+    }
+}

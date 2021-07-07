@@ -1,0 +1,484 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+body::-webkit-scrollbar{
+    width: 5px;
+}
+body::-webkit-scrollbar-track{
+    background-color: #222222;
+}
+body::-webkit-scrollbar-thumb{
+    border-radius: 20px;
+    width: 5px;
+    background-color: lightgray;
+}
+.left-page .my-spec::-webkit-scrollbar{
+    width: 3px;
+}
+.left-page .my-spec::-webkit-scrollbar-track{
+    background-color: #444444;
+}
+.left-page .my-spec::-webkit-scrollbar-thumb{
+    border-radius: 20px;
+    width: 3px;
+    background-color: lightgray;
+}   
+.active{
+    color: #04B4E0!important;
+    opacity: 100%!important;
+    transform: translateY(0)!important;
+}
+span{
+    color: #04B4E0!important;
+
+}
+.togg{
+    position: fixed;
+    opacity: 40%;
+    left: 10px;
+    top: 10px;
+    background-color: #04B4E0;
+    width: 50px;
+    height: 50px;
+    border-radius: 100%;
+    cursor: pointer;
+    padding: 9px 0 0 9px;
+    display: none;
+}
+.togg div{
+    width: 30px;
+    height: 5px;
+    margin: auto;
+    border-radius: 10px;
+    background-color: white;
+    margin: 4px 0;
+    transition-duration: .2s;
+}
+.left-page{
+    width: 520px;
+    height: 100vh;
+    position: fixed;
+}
+.left-page > nav{
+    width: 15%;
+    height: 100%;
+    float: left;
+    text-align: center;
+    background-color: #222222;
+}
+.left-page > nav li{
+    list-style-type: none;
+    border-bottom: 1px solid #444444;
+    margin: 20px 0;
+}
+.left-page > nav li i{
+    color: white;
+    font-size: 30px;
+    transition-duration: .6s;
+}
+.left-page > nav li:hover > i{
+    color: #04B4E0;
+}
+a:hover{
+    text-decoration: none!important;
+}
+.left-page > nav li h1{
+    font-size: 14px;
+    color: white;
+}
+.left-page > nav li h1{
+    opacity: 50%;
+    transition-duration: .5s;
+    transform: translateY(-5px);
+}
+.left-page > nav li:hover h1{
+    opacity: 100%;
+    transform: translateY(0);
+}
+.left-page .my-spec{
+    width: 85%;
+    height: 100%;
+    float: left;
+    background-color: #444444;
+    text-align: center;
+    transition-duration: .5s;
+}
+.left-page .my-spec .img{
+    width: 180px;
+    height: 180px;
+    border-radius: 100%;
+    border: 4px solid whitesmoke;
+    margin: auto;
+    margin-top: 20%;
+    background: url("../photos/aziz1.JPG");
+    background-size: 200% 200%;
+    background-position: -90px -20px;
+    animation: photo 10s infinite;
+}
+
+.left-page .my-spec h1{
+    margin-top: 20px;
+    color: whitesmoke;
+}
+.left-page .my-spec h4{
+    color: gray;
+    font-weight: 400;
+}
+.left-page .my-spec > nav{
+    display: none;
+}
+.left-page .my-spec > nav ul a li h1{
+    color: #EEEEEE;
+    font-size: 16px;
+}
+.left-page .my-spec .media-icons{
+    margin-top: 20px;
+}
+.left-page .my-spec .media-icons i{
+    font-size: 25px;
+    margin: 0 6px;
+    color: white;
+    width: 40px;
+    height: 40px;
+    border-radius: 100%;
+    padding-top: 7px;
+    transition-duration: .6s;
+}
+.left-page .my-spec .media-icons i:hover{
+    background-color: rgba(255,255,255,0.5);
+}
+.left-page .my-spec button{
+    margin-top: 20px;
+    border-radius: 30px;
+    padding: 10px 20px;
+    border: 2px solid white;
+    background-color: transparent;
+    color: white;
+    font-weight: 500;
+    letter-spacing: .5px;
+    transition-duration: .7s;
+}
+.left-page .my-spec button:hover{
+    background-color: white;
+    color: #007BFF;
+}
+.left-page .my-spec footer{
+    position: absolute;
+    bottom: 0%;
+    margin: auto;
+    left: 43%;
+    /* width: 145px; */
+    /* bottom: -17%; */
+}
+.left-page .my-spec footer h6{
+    font-size: 12px;
+    color: whitesmoke;
+}
+.right-page{
+    width: 61.9%;
+    min-height: 100vh;
+    background-color: #222222;
+    float: right;
+    animation: home 1s 1;
+}
+@keyframes home{
+    0%{
+        opacity: 0;
+    }
+    100%{
+        opacity: 100%;
+    }
+}
+.right-page .text-page{
+    width: 85%;
+    margin: auto;
+    padding-top: 7%;
+}
+.right-page .portfolio h1{
+    color: #eeeeee;
+    margin-bottom: 20px;
+}
+.right-page .portfolio .portfolio-item{
+    width: 50%;
+    padding: 0 20px;
+    float: left;
+    margin: 20px 0;
+}
+.right-page .portfolio .portfolio-item .portfolio-item-contact{
+    width: 100%;
+    height: 300px;
+    border-radius: 5px;
+    border: 2px solid gray;
+    position: relative;
+    overflow: hidden;
+    /* z-index: -1; */
+}
+.right-page .portfolio .portfolio-item .portfolio-item-contact img{
+    width: 100%;
+    transition-duration: .5s;
+}
+.right-page .portfolio .portfolio-item .portfolio-item-contact:hover img{
+    transform: scale(1.2);
+}
+.right-page .portfolio .portfolio-item .portfolio-item-contact:hover .portfolio-item-child{
+    background-color: rgba(0,0,0,0.4);
+}
+.right-page .portfolio .portfolio-item .portfolio-item-contact .portfolio-item-child{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background-color: rgba(0,0,0,0.6);
+    transition-duration: .5s;
+}
+.right-page .portfolio .portfolio-item .portfolio-item-contact .portfolio-item-child .portfolio-item-child-contact{
+    width: 100%;
+    height: 40%;
+    position: absolute;
+    bottom: 0;
+    background-color: gray;
+}
+.right-page .portfolio .portfolio-item .portfolio-item-contact .portfolio-item-child .portfolio-item-child-contact .left-portfolio-item-child{
+    width: 50%;
+    float: left;
+}
+.right-page .portfolio .portfolio-item .portfolio-item-contact .portfolio-item-child .portfolio-item-child-contact .left-portfolio-item-child h1{
+    font-size: 20px;
+    text-align: center;
+    margin-top: 20px;
+}
+.right-page .portfolio .portfolio-item .portfolio-item-contact .portfolio-item-child .portfolio-item-child-contact .buttons{
+    width: 50%;
+    float: left;
+    padding-top: 30px;
+}
+.right-page .portfolio .portfolio-item .portfolio-item-contact .portfolio-item-child .portfolio-item-child-contact .buttons button{
+    width: 70px;
+    border: 2px solid white;
+    border-radius: 30px;
+    background-color: transparent;
+    color: white;
+    transition-duration: .5s;
+}
+.right-page .portfolio .portfolio-item .portfolio-item-contact .portfolio-item-child .portfolio-item-child-contact .buttons button:hover{
+    background-color: white;
+    color: #04B4E0;
+
+}
+.right-page .portfolio .portfolio-item .portfolio-item-contact .portfolio-item-child .portfolio-item-child-contact .buttons i{
+    font-size: 30px;
+    margin-left: 20px;
+    padding: 4px;
+    color: white;
+    border-radius: 100%;
+    transition-duration: .5s;
+    cursor: pointer;
+}
+.right-page .portfolio .portfolio-item .portfolio-item-contact .portfolio-item-child .portfolio-item-child-contact .buttons i:hover{
+    background-color: white;
+    color: #212529;
+}
+button:focus{
+    outline: none!important;
+}
+.port{
+    width: 100%;
+    height: 100vh;
+    position: fixed;
+    z-index: 1000;
+    background-color: rgba(0,0,0,0.6);
+    transition-duration: .5s;
+}
+.port .size{
+    width: 130px;
+    height: 5%;
+    position: absolute;
+    left: 0;
+    top: 0;
+    background-color: #04B4E0;
+    border-radius: 0 0 10px 0;
+}
+.port .size i{
+    width: 22%;
+    font-size: 25px;
+    padding: 5px;
+    color: white;
+    cursor: pointer;
+    transition-duration: 1s;
+}
+.port .size i:hover{
+    color: black;
+}
+.port .port-contact{
+    width: 100%;
+    height: 90%;
+    margin: auto;
+    margin-top: 2.5%;
+    border-radius: 5px;
+    border: 2px solid gray;
+    background-color: #04B4E0;
+    transition-duration: .4s;
+}
+.close{
+    position: absolute;
+    right: 10px;
+    top: 10px;
+    background-color: #04B4E0;
+    width: 40px;
+    height: 40px;
+    border-radius: 100%;
+    cursor: pointer;
+}
+.close div{
+    width: 30px;
+    height: 5px;
+    margin: auto;
+    border-radius: 10px;
+    background-color: white;
+}
+.close .first{
+    transform: rotate(45deg);
+    margin-top: 18px;
+}
+.close .second{
+    transform: rotate(-45deg);
+    margin-top: -5px;
+}
+.port iframe{
+    width: 100%;
+    height: 100%;
+    outline: none;
+    border: none;
+    margin: auto;
+}
+.work{
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    z-index: 1000;
+    background-color: rgba(0,0,0,0.2);
+    transition-duration: .4s;
+}
+.work .work-content{
+    width: 40%;
+    height: 40%;
+    margin: 0 30%;
+    top: 10px;
+    position: relative;
+    background-color: #EEEEEE;
+    border-radius: 20px;
+    transition-duration: .4s;
+    animation: cont .5s 1;
+}
+@keyframes cont{
+    0%{
+        top: -25%;
+    }
+}
+.work .work-content .h1-content{
+    margin: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    text-align: center;
+    width: 100%;
+}
+.work .work-content .h1-content h1::after{
+    content: "Work in progress";
+    color: teal;
+    animation: h1 2s infinite;
+    font-weight: 600;
+}
+@keyframes h1{
+    0%{content: "";}
+    2%{content: "W";}
+    4%{content: "Wo";}
+    6%{content: "Wor";}
+    8%{content: "Work";}
+    10%{content: "Work ";}
+    12%{content: "Work i";}
+    14%{content: "Work in";}
+    16%{content: "Work in ";}
+    18%{content: "Work in p";}
+    20%{content: "Work in pr";}
+    22%{content: "Work in pro";}
+    24%{content: "Work in prog";}
+    26%{content: "Work in progr";}
+    28%{content: "Work in progre";}
+    30%{content: "Work in progres";color: teal;}
+    32%{content: "Work in progress";color: red;}
+    68%{content: "Work in progress";color: red;}
+    70%{content: "Work in progres";color: teal;}
+    72%{content: "Work in progre";}
+    74%{content: "Work in progr";}
+    76%{content: "Work in prog";}
+    78%{content: "Work in pro";}
+    80%{content: "Work in pr";}
+    82%{content: "Work in p";}
+    84%{content: "Work in ";}
+    86%{content: "Work in";}
+    88%{content: "Work i";}
+    90%{content: "Work ";}
+    92%{content: "Work";}
+    94%{content: "Wor";}
+    96%{content: "Wo";}
+    98%{content: "W";}
+    100%{content: "";}
+}
+@media screen and (max-width: 1024px){
+    .left-page > nav{
+        display: none;
+    }
+    .left-page .my-spec{
+        transform: translateX(-100%);
+        z-index: 1000;
+        overflow-y: scroll;
+    }
+    .left-page .my-spec > nav{
+        display: block;
+    }
+    .left-page .my-spec div{
+        position: relative;
+        z-index: 1000;
+    }
+    .right-page{
+        width: 100%;
+        z-index: 1000;
+    }
+    .togg{
+        display: block;
+        z-index: 10000;
+    }
+    .left-page .my-spec footer{
+        position: static;
+        margin-top: 50px;
+    }
+
+}
+@media screen and (max-width: 700px){
+    .right-page .portfolio .portfolio-item{
+        width: 100%;
+    }
+    .work .work-content{
+        width: 60%;
+        margin-left: 20%;
+    }
+}
+@media screen and (max-width: 425px){
+    .left-page{
+        width: 100%;
+    }
+    .left-page .my-spec{
+        width: 100%;
+    }
+    .work .work-content{
+        width: 90%;
+        margin-left: 5%;
+    }
+}

@@ -1,0 +1,358 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+    color: white;
+}
+body::-webkit-scrollbar{
+    width: 5px;
+}
+body::-webkit-scrollbar-track{
+    background-color: #222222;
+}
+body::-webkit-scrollbar-thumb{
+    border-radius: 20px;
+    width: 5px;
+    background-color: lightgray;
+}
+.left-page .my-spec::-webkit-scrollbar{
+    width: 3px;
+}
+.left-page .my-spec::-webkit-scrollbar-track{
+    background-color: #444444;
+}
+.left-page .my-spec::-webkit-scrollbar-thumb{
+    border-radius: 20px;
+    width: 3px;
+    background-color: lightgray;
+}
+.active{
+    color: #04B4E0!important;
+    opacity: 100%!important;
+    transform: translateY(0)!important;
+}
+span{
+    color: #04B4E0!important;
+
+}
+.togg{
+    position: fixed;
+    opacity: 40%;
+    left: 10px;
+    top: 10px;
+    background-color: #04B4E0;
+    width: 50px;
+    height: 50px;
+    border-radius: 100%;
+    cursor: pointer;
+    padding: 9px 0 0 9px;
+    display: none;
+}
+.togg div{
+    width: 30px;
+    height: 5px;
+    margin: auto;
+    border-radius: 10px;
+    background-color: white;
+    margin: 4px 0;
+    transition-duration: .2s;
+}
+.left-page{
+    width: 520px;
+    height: 100vh;
+    position: fixed;
+}
+.left-page > nav{
+    width: 15%;
+    height: 100%;
+    float: left;
+    text-align: center;
+    background-color: #222222;
+}
+.left-page > nav li{
+    list-style-type: none;
+    border-bottom: 1px solid #444444;
+    margin: 20px 0;
+}
+.left-page > nav li i{
+    color: white;
+    font-size: 30px;
+    transition-duration: .6s;
+}
+.left-page > nav li:hover > i{
+    color: #04B4E0;
+}
+a:hover{
+    text-decoration: none!important;
+}
+.left-page > nav li h1{
+    font-size: 14px;
+    color: white;
+}
+.left-page > nav li h1{
+    opacity: 50%;
+    transition-duration: .5s;
+    transform: translateY(-5px);
+}
+.left-page > nav li:hover h1{
+    opacity: 100%;
+    transform: translateY(0);
+}
+.left-page .my-spec{
+    width: 85%;
+    height: 100%;
+    float: left;
+    background-color: #444444;
+    text-align: center;
+    transition-duration: .5s;
+}
+.left-page .my-spec .img{
+    width: 180px;
+    height: 180px;
+    border-radius: 100%;
+    border: 4px solid whitesmoke;
+    margin: auto;
+    margin-top: 20%;
+    background: url("../photos/aziz3.JPG");
+    background-size: 140% 140%;
+    background-position: 30% 5%;
+    animation: photo 10s infinite;
+}
+
+.left-page .my-spec h1{
+    margin-top: 20px;
+    color: whitesmoke;
+}
+.left-page .my-spec h4{
+    color: gray;
+    font-weight: 400;
+}
+.left-page .my-spec > nav{
+    display: none;
+}
+.left-page .my-spec > nav ul a li h1{
+    color: #EEEEEE;
+    font-size: 16px;
+}
+.left-page .my-spec .media-icons{
+    margin-top: 20px;
+}
+.left-page .my-spec .media-icons i{
+    font-size: 25px;
+    margin: 0 6px;
+    color: white;
+    width: 40px;
+    height: 40px;
+    border-radius: 100%;
+    padding-top: 7px;
+    transition-duration: .6s;
+}
+.left-page .my-spec .media-icons i:hover{
+    background-color: rgba(255,255,255,0.5);
+}
+.left-page .my-spec button{
+    margin-top: 20px;
+    border-radius: 30px;
+    padding: 10px 20px;
+    border: 2px solid white;
+    background-color: transparent;
+    color: white;
+    font-weight: 500;
+    letter-spacing: .5px;
+    transition-duration: .7s;
+}
+.left-page .my-spec button:hover{
+    background-color: white;
+    color: #007BFF;
+}
+.left-page .my-spec footer{
+    position: absolute;
+    bottom: 0%;
+    margin: auto;
+    left: 43%;
+    /* width: 145px; */
+    /* bottom: -17%; */
+}
+.left-page .my-spec footer h6{
+    font-size: 12px;
+    color: whitesmoke;
+}
+.right-page{
+    width: 61.9%;
+    min-height: 100vh;
+    background-color: #222222;
+    float: right;
+    animation: home 1s 1;
+}
+@keyframes home{
+    0%{
+        opacity: 0;
+    }
+    100%{
+        opacity: 100%;
+    }
+}
+.right-page .text-page{
+    width: 85%;
+    margin: auto;
+    padding-top: 7%;
+}
+.right-page .text-page .contact{
+    width: 100%;
+}
+.right-page .text-page .contact h1{
+    font-size: 32px;
+    font-weight: 600;
+}
+.right-page .text-page .contact .content{
+    width: 100%;
+}
+.right-page .text-page .contact .content .left-contact{
+    width: 35%;
+    float: left;
+    padding-right: 5%;
+    box-sizing: border-box;
+}
+.right-page .text-page .contact .content .left-contact .left-contact-item{
+    width: 100%;
+    height: 120px;
+    background-color: #333333;
+    border: 1px solid #444444;
+    margin: 10px 0;
+    position: relative;
+}
+.right-page .text-page .contact .content .left-contact .left-contact-item .content-item{
+    margin: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+.right-page .text-page .contact .content .left-contact .left-contact-item .content-item i{
+    color: #04B4E0;
+    font-size: 35px;
+    display: block;
+    padding: 5px 0;
+}
+.right-page .text-page .contact .content .left-contact .left-contact-item .content-item h1{
+    font-size: 14px;
+    color: #EEEEEE;
+    font-weight: 600;
+    padding: 0;
+}
+.right-page .text-page .contact .content .right-contact{
+    width: 65%;
+    float: left;
+}
+
+.right-page .text-page .contact .content .right-contact .map{
+    width: 100%;
+    height: 180px;
+}
+.right-page .text-page .contact .content .right-contact .forms{
+    width: 100%;
+    margin-top: 30px;
+}
+.right-page .text-page .contact .content .right-contact .forms h1{
+    font-size: 21px;
+    color: #EEEEEE;
+    margin-bottom: 30px;
+}
+.right-page .text-page .contact .content .right-contact .forms .left-form{
+    width: 50%;
+    padding-right: 3%;
+    float: left;
+}
+.right-page .text-page .contact .content .right-contact .forms .left-form input{
+    width: 100%;
+    margin: 5px 0;
+    background-color: transparent;
+    border-radius: 5px;
+    border: 3px solid gray;
+    color: #EEEEEE;
+    padding: 6px 10px;
+}
+.right-page .text-page .contact .content .right-contact .forms .left-form input:focus{
+    outline: none;
+    border: 3px solid #04B4E0;
+}
+.right-page .text-page .contact .content .right-contact .forms .right-form{
+    width: 50%;
+    float: left;
+}
+.right-page .text-page .contact .content .right-contact .forms .right-form textarea{
+    width: 100%;
+    margin: 5px 0;
+    background-color: transparent;
+    border-radius: 5px;
+    border: 3px solid gray;
+    color: #EEEEEE;
+    padding: 6px 10px;
+}
+.right-page .text-page .contact .content .right-contact .forms .right-form textarea:focus{
+    outline: none;
+    border: 3px solid #04B4E0;
+}
+.right-page .text-page .contact .content .right-contact .forms button{
+    border: 2px solid #04B4E0;
+    color: #EEEEEE;
+    padding: 10px 20px;
+    font-size: 16px;
+    font-weight: 600;
+    background-color: transparent;
+    border-radius: 100px;
+    display: block;
+    transition-duration: .5s;
+}
+.right-page .text-page .contact .content .right-contact .forms button:hover{
+    background-color: #04B4E0;
+}
+
+@media screen and (max-width: 1024px){
+    .left-page > nav{
+        display: none;
+    }
+    .left-page .my-spec{
+        transform: translateX(-100%);
+        z-index: 1000;
+        overflow-y: scroll;
+    }
+    .left-page .my-spec > nav{
+        display: block;
+    }
+    .right-page{
+        width: 100%;
+        /* z-index: 1000; */
+    }
+    .togg{
+        display: block;
+        z-index: 10000;
+    }
+    .left-page .my-spec footer{
+        position: static;
+        margin-top: 50px;
+    }
+
+}
+@media screen and (max-width: 425px){
+    .left-page{
+        width: 100%;
+    }
+    .left-page .my-spec{
+        width: 100%;
+    }
+    .right-page .text-page .contact .content .left-contact{
+        width: 100%;
+        padding: 0;
+    }
+    .right-page .text-page .contact .content .right-contact{
+        width: 100%;
+    }
+    .right-page .text-page .contact .content .right-contact .forms .left-form,.right-page .text-page .contact .content .right-contact .forms .right-form{
+        width: 100%;
+        padding: 0;
+    }
+}

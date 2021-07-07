@@ -1,0 +1,471 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+body::-webkit-scrollbar{
+    width: 5px;
+}
+body::-webkit-scrollbar-track{
+    background-color: #222222;
+}
+body::-webkit-scrollbar-thumb{
+    border-radius: 20px;
+    width: 5px;
+    background-color: lightgray;
+}
+.left-page .my-spec::-webkit-scrollbar{
+    width: 3px;
+}
+.left-page .my-spec::-webkit-scrollbar-track{
+    background-color: #444444;
+}
+.left-page .my-spec::-webkit-scrollbar-thumb{
+    border-radius: 20px;
+    width: 3px;
+    background-color: lightgray;
+}
+.active{
+    color: #04B4E0!important;
+    opacity: 100%!important;
+    transform: translateY(0)!important;
+}
+span{
+    color: #04B4E0!important;
+
+}
+.togg{
+    position: fixed;
+    opacity: 40%;
+    left: 10px;
+    top: 10px;
+    background-color: #04B4E0;
+    width: 50px;
+    height: 50px;
+    border-radius: 100%;
+    cursor: pointer;
+    padding: 9px 0 0 9px;
+    display: none;
+}
+.togg div{
+    width: 30px;
+    height: 5px;
+    margin: auto;
+    border-radius: 10px;
+    background-color: white;
+    margin: 4px 0;
+    transition-duration: .2s;
+}
+.left-page{
+    width: 520px;
+    height: 100vh;
+    position: fixed;
+}
+.left-page > nav{
+    width: 15%;
+    height: 100%;
+    float: left;
+    text-align: center;
+    background-color: #222222;
+}
+.left-page > nav li{
+    list-style-type: none;
+    border-bottom: 1px solid #444444;
+    margin: 20px 0;
+}
+.left-page > nav li i{
+    color: white;
+    font-size: 30px;
+    transition-duration: .6s;
+}
+.left-page > nav li:hover > i{
+    color: #04B4E0;
+}
+a:hover{
+    text-decoration: none!important;
+}
+.left-page > nav li h1{
+    font-size: 14px;
+    color: white;
+}
+.left-page > nav li h1{
+    opacity: 50%;
+    transition-duration: .5s;
+    transform: translateY(-5px);
+}
+.left-page > nav li:hover h1{
+    opacity: 100%;
+    transform: translateY(0);
+}
+.left-page .my-spec{
+    width: 85%;
+    height: 100%;
+    float: left;
+    background-color: #444444;
+    text-align: center;
+    transition-duration: .5s;
+}
+.left-page .my-spec .img{
+    width: 180px;
+    height: 180px;
+    border-radius: 100%;
+    border: 4px solid whitesmoke;
+    margin: auto;
+    margin-top: 20%;
+    background: url("../photos/aziz1.JPG");
+    background-size: 200% 200%;
+    background-position: -90px -20px;
+    animation: photo 10s infinite;
+}
+
+.left-page .my-spec h1{
+    margin-top: 20px;
+    color: whitesmoke;
+}
+.left-page .my-spec h4{
+    color: gray;
+    font-weight: 400;
+}
+.left-page .my-spec > nav{
+    display: none;
+}
+.left-page .my-spec > nav ul a li h1{
+    color: #EEEEEE;
+    font-size: 16px;
+}
+.left-page .my-spec .media-icons{
+    margin-top: 20px;
+}
+.left-page .my-spec .media-icons i{
+    font-size: 25px;
+    margin: 0 6px;
+    color: white;
+    width: 40px;
+    height: 40px;
+    border-radius: 100%;
+    padding-top: 7px;
+    transition-duration: .6s;
+}
+.left-page .my-spec .media-icons i:hover{
+    background-color: rgba(255,255,255,0.5);
+}
+.left-page .my-spec button{
+    margin-top: 20px;
+    border-radius: 30px;
+    padding: 10px 20px;
+    border: 2px solid white;
+    background-color: transparent;
+    color: white;
+    font-weight: 500;
+    letter-spacing: .5px;
+    transition-duration: .7s;
+}
+.left-page .my-spec button:hover{
+    background-color: white;
+    color: #007BFF;
+}
+.left-page .my-spec footer{
+    position: absolute;
+    bottom: 0%;
+    margin: auto;
+    left: 43%;
+    /* width: 145px; */
+    /* bottom: -17%; */
+}
+.left-page .my-spec footer h6{
+    font-size: 12px;
+    color: whitesmoke;
+}
+.right-page{
+    float: right;
+    width: 61.9%;
+    min-height: 100vh;
+    position: relative;
+    animation: home .5s 1;
+    background-color: #222222;
+    background-size: cover;
+    /* background-image: linear-gradient(rgba(34,34,34,0.8),rgba(34,34,34,0.8)),url(photos/aziz1.JPG); */
+}
+@keyframes home{
+    0%{
+        left: -100vw;
+        opacity: 0;
+    }
+    100%{
+        left: 0;
+        opacity: 100%;
+    }
+}
+.right-page .text-page{
+    width: 85%;
+    margin: auto;
+    padding-top: 7%;
+}
+.right-page h1{
+    color: white;
+}
+.right-page .text-page > h1{
+    font-size: 32px;
+    font-weight: 700;
+}
+.right-page .text-page div > h1{
+    font-size: 21px;
+    font-weight: 600;
+}
+.right-page .text-page .contant{
+    width: 100%;
+    min-height: 140vh;
+}
+.right-page .text-page .text-left{
+    width: 50%;
+    float: left;
+}
+.right-page .text-page .education{
+    margin-top: 40px;
+    width: 100%;
+    min-height: 400px;
+
+}
+.right-page .text-page .education > div{
+    margin-top: 30px;
+}
+.right-page .text-page .education .education-left{
+    width: 30%;
+    min-height: 100%;
+    /* border: 1px solid black; */
+    text-align: right;
+    float: left;
+}
+
+.right-page .text-page .education .education-left div{
+    float: right;
+    width: 90%;
+    position: relative;
+    height: 180px;
+}
+.right-page .text-page .education .education-left div::before{
+    content: url("../photos/circle.png");
+    position: absolute;
+    right: -40px;
+}
+.right-page .text-page .education .education-left div h1{
+    color: #AAAAAA;
+    font-size: 14px;
+}
+.right-page .text-page .education .education-left div h2{
+    color: #A5A6A7;
+    font-size: 13px;
+}
+.right-page .text-page .education .education-middle{
+    float: left;
+    width: 1px;
+    height: 300px;
+    background-color: #444444;
+    margin-left: 30px;
+}
+.right-page .text-page .education .education-right{
+    float: left;
+    width: 55%;
+    box-sizing: border-box;
+    padding: 0 20px;
+}
+.right-page .text-page .education .education-right > div{
+    height: 180px;
+}
+.right-page .text-page .education .education-right h1{
+    font-size: 16px;
+    color: #EEEEEE;
+}
+.right-page .text-page .education .education-right h2{
+    font-size: 14px;
+    color: #D5D5D5;
+    margin-top: 10px;
+}
+.right-page .text-page .text-right{
+    width: 50%;
+    padding-left: 10%;
+    float: left;
+    margin-top: 40px;
+
+}
+.right-page .text-page .skill{
+    width: 100%;
+}
+.right-page .text-page .skill .skill-header{
+    margin-bottom: 30px;
+    width: 100%;
+    text-align: left;
+}
+.right-page .text-page .skill .skill-body h2{
+    color: #EEEEEE;
+    font-size: 13px;
+    float: left;
+}
+.right-page .text-page .skill .skill-body h3{
+    float: right;
+    color: #AAAAAA;
+    font-size: 11px;
+}
+.right-page .text-page .skill .skill-body .progress{
+    height: 10px;
+    border: 2px solid #04B4E0;
+    padding: 1px;
+    background-color: transparent;
+    width: 100%;
+    margin-bottom: 20px;
+}
+.right-page .text-page .skill .skill-body .progress .progress-bar{
+    background-color: #04B4E0;
+    animation: progres 1.5s 1;
+}
+@keyframes progres{
+    0%{
+        width: 0%;
+    }
+    33%{
+        width: 0%;
+    }
+}
+.mb{
+    margin-bottom: 50px!important;
+}
+.right-page .text-page .Knowledge{
+    margin-top: 30px;
+    text-align: left;
+}
+.right-page .text-page .Knowledge .Knowledge-header{
+    margin-bottom: 20px;
+    width: 100%;
+}
+.right-page .text-page .Knowledge .Knowledge-header h1{
+    color: #EEEEEE;
+    font-size: 21px;
+}
+.right-page .text-page .Knowledge .Knowledge-body{
+    width: 100%;
+}
+.right-page .text-page .Knowledge .Knowledge-body button{
+    color: white;
+    background-color: #04B4E0;
+    margin-top: 3px;
+    margin-right: 3px;
+    padding: 5px 10px;
+    font-size: 13px;
+    border: none;
+    border-radius: 4px;
+    cursor: text;
+}
+.right-page .text-page footer .Certificates{
+    width: 100%;
+    margin-bottom: 50px;
+    float: left;
+    color: #EEEEEE;
+}
+.right-page .text-page footer .Certificates > h1{
+    margin-bottom: 30px;
+}
+.right-page .text-page footer .Certificates .card-item{
+    width: 45%;
+    margin: 0 2.5%;
+    min-height: 120px;
+    float: left;
+    border: 3px solid #444444;
+    border-radius: 10px;
+}
+.right-page .text-page footer .Certificates .card-item .left-card{
+    background-color: #444444;
+    width: 40%;
+    height: 120px;
+    float: left;
+}
+.right-page .text-page footer .Certificates .card-item h2{
+    color: #EEEEEE;
+    font-size: 14px;
+    text-align: center;
+    margin-top: 45px;
+}
+.right-page .text-page footer .Certificates .card-item .right-card{
+    width: 60%;
+    float: left;
+    height: 120px;
+    padding: 20px 0 0 20px;
+}
+.right-page .text-page footer .Certificates .card-item .right-card h1{
+    font-size: 16px;
+    color: #EEEEEE;
+    padding: 0;
+    margin: 0 0 5px 0;
+}
+.right-page .text-page footer .Certificates .card-item .right-card h2{
+    color: #777777;
+    font-size: 14px;
+    margin: 0 0 8px 0;
+    text-align: left;
+}
+.right-page .text-page footer .Certificates .card-item .right-card h3{
+    font-size: 11px;
+    color: #777777;
+    padding: 0;
+    margin: 0;
+}
+@media screen and (max-width: 1024px){
+    .left-page > nav{
+        display: none;
+    }
+    .left-page .my-spec{
+        transform: translateX(-100%);
+        z-index: 1000;
+        overflow-y: scroll;
+    }
+    .left-page .my-spec > nav{
+        display: block;
+    }
+    .right-page{
+        width: 100%;
+        z-index: -1;
+    }
+    .togg{
+        display: block;
+        z-index: 10000;
+    }
+    .left-page .my-spec footer{
+        position: static;
+        margin-top: 50px;
+    }
+
+}
+@media screen and (max-width: 768px){
+    .right-page .text-page .education .education-middle{
+        height: 420px;
+    }
+    .right-page .text-page .education .education-left div{
+        height: 220px;
+    }
+    .right-page .text-page .education .education-right div{
+        height: 220px;
+    }
+}
+@media screen and (max-width: 700px){
+    .right-page .text-page .text-left{
+        width: 100%;
+    }
+    .right-page .text-page .text-right{
+        width: 100%;
+    }
+    .right-page .text-page footer{
+        margin-top: 1100px;
+    }
+    .right-page .text-page footer .Certificates .cards .card-item{
+        width: 100%;
+        margin: 20px 0;
+    }
+}
+@media screen and (max-width: 425px){
+    .left-page{
+        width: 100%;
+    }
+    .left-page .my-spec{
+        width: 100%;
+    }
+}
